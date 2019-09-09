@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fibonacci Generator </h1>
+
+<input type="number" id="myNumber" value="0">
+
+<p>Enter a number to generate Fibonacci numbers.</p>
+
+<button onclick="myFunction()">Go</button>
+
+
+<p id="newLine"></p>
+
+<script> 
+
+function myFunction() {
+    var n = document.getElementById("myNumber").value;
+    document.getElementById("newLine").innerHTML = fibonacciGenerator (n);
+}
+
+var init = [0]; 
+var previousNumber = 1;
+var presentNumber = 0;
+var sum = 0;
+ 
+function fibonacciGenerator (n) {
+  
